@@ -1,0 +1,87 @@
+*{
+    font-family: "Poppins", sans-serif;
+    background-color: #fafafa;
+    color: #212121;
+    text-decoration: none;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+}
+.wrapper{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+header{
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.logo, nav, .mail{
+    flex: 1;
+}
+.logo {}
+
+.logo-name {
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.logo-span {
+    color: #2962ff;
+}
+
+nav ul{
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    list-style: none;
+}
+nav ul li{
+    font-size: 18px;
+    font-weight: 500;
+}
+.mail {
+    text-align: right;
+}
+
+.ri-mail-line {
+    color: #2962ff;
+    font-weight: 600;
+    margin-right: 10px;
+    font-size: 18px;
+}
+
+.email {
+    font-size: 16px;
+}
+
+.hero-section {
+    display: flex;
+    gap: 10px;
+}
+
+.intro {
+    flex: 1;
+}
+
+.intro-content {}
+
+.intro-btns {}
+
+.book-call {}
+
+.cv {}
+
+.intro-image {
+    flex: 1;
+}
+.intro-image img{
+    max-width: 100%;
+    height: auto;
+}
