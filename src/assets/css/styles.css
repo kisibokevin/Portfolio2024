@@ -9,8 +9,13 @@ body{
     margin: 0;
     padding: 0;
 }
+.heading{
+    font-size: 48px;
+    font-weight: 600;
+    text-align: center;
+}
 .wrapper{
-    max-width: 1200px;
+    max-width: 1300px;
     margin: 0 auto;
 }
 
@@ -64,24 +69,228 @@ nav ul li{
 .hero-section {
     display: flex;
     gap: 10px;
+    padding-top: 50px;
+    padding-bottom: 60px;
+    height: calc(100vh-100px);
 }
 
 .intro {
     flex: 1;
 }
 
-.intro-content {}
+.intro-content {
+    
+}
+.intro-span{
+    color: #2962ff;
+}
+.intro-content h2 {
+    font-size: 32px;
+    font-weight: 500;
+}
+.intro-content h1 {
+    font-size: 48px;
+    font-weight: 600;
+}
+.intro-content p {
+    font-size: 28px;
+}
 
 .intro-btns {}
 
-.book-call {}
+.intro-btns button {
+    cursor: pointer;
+}
+.book-call {
+    background-color: #2962ff;
+    padding: 5px 20px;
+    font-size: 24px;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-weight: 500;
+    margin-right: 20px;
+}
 
-.cv {}
+.cv {
+    background-color: #fafafa;
+    padding: 5px 20px;
+    font-size: 24px;
+    color: #212121;
+    border-radius: 5px;
+    border: 1px solid #C0C0C0;
+    font-weight: 500;
+}
 
 .intro-image {
     flex: 1;
 }
 .intro-image img{
+    display: block;
     max-width: 100%;
     height: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+.skills{
+    margin-bottom: 30px;
+}
+.skills-set{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    gap: 20px;
+}
+.skills-title:hover {
+    color: #212121;
+}
+.skills-title:not(.skills-set) {
+    font-size: 28px;
+    font-weight: 400;
+    text-align: center;
+    border-right: 4px solid #78909c;
+    padding-right: 10px;
+}
+.skills-set li{
+    font-size: 32px;
+    font-weight: 500;
+    padding: 3px 8px;
+}
+.html {
+    color: #f4511e;
+}
+.html:hover {
+    background-color: #f4511e;
+    border: none;
+    border-radius: 5px;
+    color: #fafafa;
+}
+.css {
+    color: #03a9f4;
+}
+.css:hover {
+    background-color: #03a9f4;
+    border: none;
+    border-radius: 5px;
+    color: #fafafa;
+}
+
+.tailwind {
+    color: #0277bd;
+}
+.tailwind:hover {
+    background-color: #0277bd;
+    border: none;
+    border-radius: 5px;
+    color: #fafafa;
+}
+.javascript {
+    color: #ff9100;
+}
+.javascript:hover {
+    background-color: #ff9100;
+    border: none;
+    border-radius: 5px;
+    color: #fafafa;
+}
+.reactjs {
+    color: #2962ff;
+}
+.reactjs:hover {
+    background-color: #2962ff;
+    border: none;
+    border-radius: 5px;
+    color: #fafafa;
+}
+.nextjs {
+    color: #263238;
+}
+.nextjs:hover {
+    background-color: #263238;
+    border: none;
+    border-radius: 5px;
+    color: #fafafa;
+}
+.skills-list{
+    display: flex;
+    list-style: none;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+}
+.skills-list li {
+    border: 1px solid #C0C0C0;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+
+.about {
+    display: flex;
+    gap: 30;
+}
+.about-title{
+    margin-top: 30px;
+}
+.imageHolder {
+    flex: 1;
+}
+.imageHolder img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.aboutContent {
+    flex: 1;
+    padding: 5px;
+}
+
+.about-description {
+    font-size: 28px;
+    font-weight: 400;
+}
+
+.servicesContainer {
+    display: flex;
+    padding: 10px;
+    gap: 5px;
+    flex-wrap: wrap;
+    background-color: #fff;
+    border-radius: 8px;
+}
+
+h2 {
+    color: #333;
+}
+
+p {
+    color: #555;
+}
+
+/* Styling for individual services */
+.service {
+    flex: 0 0 33.0%;
+    box-sizing: border-box;
+    gap: 10px;
+    padding: 10px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.service i {
+    font-size: 24px;
+    margin-right: 10px;
+    color: #007bff;
+}
+
+.service h3 {
+    color: #007bff;
+    margin: 0;
+    text-align: center;
+}
+
+.service p {
+    margin-top: 10px;
 }
