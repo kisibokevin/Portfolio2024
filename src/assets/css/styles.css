@@ -3,6 +3,7 @@
     background-color: #fafafa;
     color: #212121;
     text-decoration: none;
+    scroll-behavior: smooth;
 }
 
 body{
@@ -268,7 +269,6 @@ p {
     color: #555;
 }
 
-/* Styling for individual services */
 .service {
     flex: 0 0 33.0%;
     box-sizing: border-box;
@@ -293,4 +293,183 @@ p {
 
 .service p {
     margin-top: 10px;
+}
+
+
+/* Portfolio styles */
+
+.portfolio {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.portfolio-item {
+    flex: 0 0 45%;
+    margin: 10px;
+    border-radius: 5px;
+    border: 1px solid #252424;
+}
+
+.portfolio-image {
+    position: relative;
+}
+
+.portfolio-image img {
+    width: 100%;
+    height: auto;
+}
+
+.portfolio-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    padding: 20px;
+    opacity: 0;
+    transition: opacity 0.5s;
+}
+
+.portfolio-image:hover .portfolio-overlay {
+    opacity: 1;
+    border-radius: 5px;
+}
+
+/* Contact styles */
+
+.contact {
+    display: flex;
+}
+
+.contact-info {
+    flex: 1;
+    margin-right: 40px;
+}
+
+.contact-form {
+    flex: 1;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 5px;
+}
+
+input,
+textarea {
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.btn {
+    background: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background: #0062cc;
+}
+
+.footer {
+    background: #333;
+    color: #fff;
+    padding: 2rem;
+    text-align: center;
+}
+
+.footer p {
+    margin: 0.5rem 0;
+}
+
+.footer a {
+    color: #fff;
+}
+
+.social-media {
+    display: flex;
+    justify-content: center;
+    margin: 1rem 0;
+}
+
+.social-media a {
+    margin: 0 0.5rem;
+    font-size: 1.5rem;
+}
+
+.scroll-top {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.scroll-top i {
+    margin-right: 0.5rem;
+}
+
+@media (max-width: 600px) {
+    .footer {
+        padding: 1rem;
+    }
+
+    .social-media {
+        flex-direction: column;
+    }
+
+    .social-media a {
+        margin: 0.25rem 0;
+    }
+}
+
+/* Media queries */
+
+@media (max-width: 768px) {
+
+    .portfolio {
+        flex-direction: column;
+    }
+
+    .portfolio-item {
+        max-width: 100%;
+    }
+
+    .contact {
+        flex-direction: column;
+    }
+
+    .contact-info {
+        margin-right: 0;
+        margin-bottom: 40px;
+    }
+
+}
+
+@media (max-width: 576px) {
+
+    .portfolio-overlay h3 {
+        font-size: 1.5rem;
+    }
+
+    .portfolio-overlay p {
+        display: none;
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+        padding: 8px;
+        font-size: 14px;
+    }
+
 }
